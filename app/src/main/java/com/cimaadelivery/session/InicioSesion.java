@@ -6,6 +6,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
+import com.cimaadelivery.proj.MainActivity;
 import com.cimaadelivery.proj.R;
 
 public class InicioSesion extends AppCompatActivity {
@@ -14,11 +15,16 @@ public class InicioSesion extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_inicio_sesion);
+
+        btn1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                startActivity(new Intent(MainActivity.this, InicioSesion.class));
+            }
+        });
     }
-    public void aceptar(View view) {
-        Intent rent = new Intent(InicioSesion.this,InicioSesion2.class);
-        startActivity(rent);
-    }
+
 
 
 }

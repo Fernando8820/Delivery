@@ -1,5 +1,4 @@
 <resources>
     <string name="app_name">CIMAA Delivery</string>
-
-
+    <string name="btn1_inicio">INICIAR</string>
 </resources>
